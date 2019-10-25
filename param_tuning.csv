@@ -1,0 +1,49 @@
+"C","kernel","degree","gamma","coef0","shrinking","probability","tol","class_weight","max_iter","verbose"
+#########################
+# RBF Kernel
+1.0,rbf,3,auto,0.0,True,False,0.001,None,-1,False
+0.5,rbf,3,auto,0.0,True,False,0.001,None,-1,False
+0.1,rbf,3,auto,0.0,True,False,0.001,None,-1,False
+
+# --> change probability
+1.0,rbf,3,auto,0.0,True,True,0.001,None,-1,False
+0.5,rbf,3,auto,0.0,True,True,0.001,None,-1,False
+0.1,rbf,3,auto,0.0,True,True,0.001,None,-1,False
+
+# --> change gamma
+1.0,rbf,3,scale,0.0,True,True,0.001,None,-1,False
+0.5,rbf,3,scale,0.0,True,True,0.001,None,-1,False
+0.1,rbf,3,scale,0.0,True,True,0.001,None,-1,False
+
+
+#########################
+# Linear Kernel
+1.0,linear,3,auto,0.0,True,True,0.001,None,-1,False
+0.5,linear,3,auto,0.0,True,True,0.001,None,-1,False
+0.1,linear,3,auto,0.0,True,True,0.001,None,-1,False
+
+
+#########################
+# Sigmoid Kernel
+1.0,sigmoid,3,auto,0.0,True,True,0.001,None,-1,False
+0.5,sigmoid,3,auto,0.0,True,True,0.001,None,-1,False
+0.1,sigmoid,3,auto,0.0,True,True,0.001,None,-1,False
+# --> change gamma
+1.0,sigmoid,3,scale,0.0,True,True,0.001,None,-1,False
+0.5,sigmoid,3,scale,0.0,True,True,0.001,None,-1,False
+0.1,sigmoid,3,scale,0.0,True,True,0.001,None,-1,False
+# --> change coef0
+1.0,sigmoid,3,auto,0.5,True,True,0.001,None,-1,False
+0.5,sigmoid,3,auto,0.5,True,True,0.001,None,-1,False
+0.1,sigmoid,3,auto,0.5,True,True,0.001,None,-1,False
+
+#########################
+# Polynomial Kernel
+1.0,poly,3,auto,0.0,True,True,0.001,None,-1,False
+0.5,poly,3,auto,0.0,True,True,0.001,None,-1,False
+0.1,poly,3,auto,0.0,True,True,0.001,None,-1,False
+# --> change degree
+1.0,poly,5,auto,0.0,True,True,0.001,None,-1,False
+0.5,poly,5,auto,0.0,True,True,0.001,None,-1,False
+0.1,poly,5,auto,0.0,True,True,0.001,None,-1,False
+
