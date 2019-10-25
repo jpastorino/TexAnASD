@@ -1,0 +1,79 @@
+{
+    "omim": {
+        "apiKey"                   : "add_your_OMIM_api_key_here",
+        "format"                   : "json",
+        "include"                  :"all",
+        "url"                      : "https://api.omim.org/api/entry",
+        "OMIM_PATH"                : "./data/omim",
+        "OMIM_GENE_PATH"           : "./data/omim/genes",
+        "OMIM_PROC_PATH"           : "./data/omim/processed",
+        "OMIM_TO_GENE_FILE"        : "./data/omim/mim2gene.txt",
+        
+        "READ_OMIM_FROM_WEB"       : "False",  
+        "READ_OMIM_FROM_WEB_desc"  :"True reload data from web, False Loads from omim data directory.",
+        "READ_OMIM_FROM_FILE"      : "True", 
+        "READ_OMIM_FROM_FILE_desc" : "False will generate the dataframe. True will read the dataframe from file",
+        
+        "LIMIT_SAMPLES_NO"      : 0,
+        "LIMIT_SAMPLES_NO_desc" : "Number of samples to use for train/test when prototiping. 0 (or neg) to use all"
+    },    
+    "app":{
+        "DATA_PATH"              : "./data/",
+        "PROJECT_DATA"           : "./data/texanasd/",
+        
+        "PARAM_FILE"               : "./param_tuning.csv",
+        "CHOOSEN_PARMETER_ID"      : 17,
+        "CHOOSEN_PARMETER_ID_desc" : "The corresponding line number (excepting comments and blank lines) from the param file to read the parameters.",
+        
+        "LOG_DIR"                : "./logs/",
+        "LOG_LEVEL"              : 10,
+        "LOG_LEVEL_desc"         : "Select the Level Value: CRITICAL 50, ERROR 40,WARNING 30,INFO 20,DEBUG 10, NOTSET 0",
+        "LOG_FORMAT"             : "%(asctime)s|Proc-%(process)d|%(levelname)s|%(message)s",
+        "LOG_DATE_FORMAT"        : "%Y%m%d_%H%M%S",
+        
+        "USE_MULTIPLE_GPU"       : 0,
+        "USE_MULTIPLE_desc"      : "1 to enable use parallel execution on multiple GPUS. 0 To use CPU or only one GPU if Tensorflow is GPU-Enabled.",
+        "GPU_QTY"                : 4,
+        "GPU_QTY_desc"           : "If USE_MULTIPLE_GPU ==1 (enabled), then how many GPUs to use. Ignored if USE_MULTIPLE_GPU==0.",
+        
+        "GENERATE_OMIM_IDS"      : "False",
+        "GENERATE_OMIM_IDS_desc" : "True regenerate the ids mapping file. False loads it from the file. Consider aling READ_OMIM_FROM_WEB/FILE with this.",
+        "OMIM_IDS_FILE"          : "./data/texanasd/req_omim_ids.csv",
+        
+        "K_FOLDS_desc"           : "Number of folds.",
+        "K_FOLDS"                : 3,
+        
+        "PROC_MODE_desc"         : "Type of computing model. 0 for sequential. 1 for parallel.",
+        "PROC_MODE"              : 1,
+    
+        "PROC_RUN_desc"          : "RUN the model or not.",
+        "PROC_RUN"               : "False",
+    
+        "SAVE_TRAIN_TEST_DF"      : 1,
+        "SAVE_TRAIN_TEST_DF_desc" : "1 will save the train and test gene/label dataframes to files. 0 will not save the files. ",
+    
+        "COMPUTE_SPLITS"         : "False",
+        "COMPUTE_SPLITS_desc"    : "True will generate X/Y train/Test and folds and save to files. False will read from previously saved files. ",
+        
+        "TEST_MAIN_PIPELINE"      : 0,
+        "TEST_MAIN_PIPELINE_desc" : "1 run single cross validation before param testing, 0 otherwise.",
+
+        "RUN_CROSS_VAL_ITER"      : 0,
+        "RUN_CROSS_VAL_ITER_desc" : "1 run cross valitarion iteration(long process). 0 don't run cross validation.",
+
+        "RUN_PARAM_TUNING"      : 0,
+        "RUN_PARAM_TUNING_desc" : "1 run param tuning (long process). 0 don't run param tuning.",
+        "PARAM_TUNING_FILE"     : "./data/texanasd/parameter_tuning_summary.csv"
+    },
+    "sfari":{
+        "SFARI_GENE_FILE" : "./data/sfari_gene/SFARI-Gene_genes_06-20-2019release_07-10-2019export.csv"
+    },
+    "stringdb":{
+        "PROTEIN_INFO_FILE" : "./data/stringdb/9606.protein.info.v11.0.txt"
+    },
+    "forecasd":{
+        "desc"         : "previous work results to compare with",
+        "results_file" : "./data/forecASD/forecASD_results.csv",
+        "test_file"    : "./data/forecASD/forecASD_test_set.csv"
+    }
+}
