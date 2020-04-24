@@ -1,6 +1,7 @@
 # TexAnASD - Text Analytics for ASD Risk Gene Predictions
 - IEEE BIBM 2019 - Workshop on Machine Learning and Artificial Intelligence in Bioinformatics and Medical Informatics
 - San Diego, CA, USA, November 18 - 21, 2019
+- Access the paper [here](https://ieeexplore.ieee.org/abstract/document/8983107).
 
 ## Code Files Description
 * **File**: `./auxiliary_func.py`: Auxiliary functions.
@@ -51,3 +52,8 @@ Use the config file to configure the data loading.
 
 - [Machine Learning Laboratory](http://ml.cse.ucdenver.edu)
 - Computer Science and Engineering - University of Colorado, Denver
+
+## Citation
+Please if you want to reference our work in yours, please cite this paper as follows.
+
+J. Pastorino and A. K. Biswas, "TexAnASD: Text Analytics for ASD Risk Gene Predictions," 2019 IEEE International Conference on Bioinformatics and Biomedicine (BIBM), San Diego, CA, USA, 2019, pp. 1350-1357.
