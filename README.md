@@ -4,10 +4,10 @@
 - Access the paper [here](https://ieeexplore.ieee.org/abstract/document/8983107).
 
 ## Table of Contents
-1. [Code Files Description](#markdown-header-Code-Files-Description)
-1. [Data Directory Description](#markdown-header-Data-Directory-Description)
-1. [Authors](#markdown-header-Authors)
-1. [Citation](#markdown-header-Citation)
+1. [Code Files Description](#Code-Files-Description)
+1. [Data Directory Description](#DAta-Directory-Description)
+1. [Authors](#Authors)
+1. [Citation](#Citation)
 
 ## Code Files Description
 * **File**: `./auxiliary_func.py`: Auxiliary functions.
